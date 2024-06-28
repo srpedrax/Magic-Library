@@ -114,3 +114,31 @@ Window:AddSlider(section, {
 - **DefaultValue** [\<number\>](https://www.lua.org/pil/2.3.html): Valor inicial do slide
 - **Callback**: Função que será executada ao deslizar o slide (nota: `value` é o valor que será retornado)
 
+### Menu suspenso
+```lua
+window:AddDropdown(section, {
+    Name = "Escolha uma opção",
+    Options = {"Opção 1", "Opção 2", "Opção 3"},
+    Default = "Opção 2",
+    Callback = function(selectedOption)
+        UILib:MakeNotify({
+            Title = "Opção Selecionada",
+            Text = "Você escolheu: " .. selectedOption,
+            Time = 2
+        })
+    end
+})
+```
+- **Name** [\<string\>](https://www.lua.org/pil/2.4.html): Nome do menu
+- **Options** [\<object\>](https://www.lua.org/pil/2.5.html): Lista de opções do menu
+- **Default** [\<string\>](https://www.lua.org/pil/2.4.html): Opção selecionada por padrão
+- **Callback**: Função que será executada ao selecionar uma opção
+
+## Informações
+Versão atual: [BETA] v0.0.1
+Criado dia: 24/06/2024
+Publicado dia: 28/06/2024
+Criador: **srpedrax**
+Última atualização: 28/06/2024
+
+# Magic Library - Faça mágica
