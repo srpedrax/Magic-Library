@@ -113,3 +113,4 @@ Window:AddSlider(section, {
 - **Max** [\<number\>](https://www.lua.org/pil/2.3.html): Valor máximo do slide
 - **DefaultValue** [\<number\>](https://www.lua.org/pil/2.3.html): Valor inicial do slide
 - **Callback**: Função que será executada ao deslizar o slide (nota: `value` é o valor que será retornado)
+
